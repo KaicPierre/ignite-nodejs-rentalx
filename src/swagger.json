@@ -7,7 +7,6 @@
     "contact": {
       "email": "kaicpierresilva2002@gmail.com"
     }
-    
   },
 
   "paths": {
@@ -18,7 +17,7 @@
         "description": "Create a new category",
         "requestBody": {
           "content": {
-            "application/json":{
+            "application/json": {
               "schema": {
                 "type": "object",
                 "properties": {
@@ -30,7 +29,7 @@
                   }
                 },
                 "example": {
-                  "name":"Category name sample",
+                  "name": "Category name sample",
                   "description": "Category description sample"
                 }
               }
@@ -54,17 +53,17 @@
           "200": {
             "description": "Success",
             "content": {
-              "application/json":{
+              "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "properties":{
+                    "properties": {
                       "name": {
                         "type": "string"
                       },
                       "description": {
-                        "type":"string"
+                        "type": "string"
                       }
                     }
                   }
