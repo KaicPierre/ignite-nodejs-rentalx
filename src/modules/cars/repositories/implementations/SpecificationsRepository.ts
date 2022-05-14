@@ -14,12 +14,12 @@ class SpecificationsRepository implements ISpecificationsRepository {
     this.repository = AppDataSource.getRepository(Specification);
   }
 
-  async create({ name, description }: ICreateSpecificationDTO) {
+  async create({ name, description }: ICreateSpecificationDTO): Promise<void> {
     const specification = await this.repository.create({
       name,
       description,
     });
-    return this.repository.save(specification);
+    await this.repository.save(specification);
   }
 
   async findByName(name: string): Promise<Specification> {
