@@ -11,6 +11,7 @@ services:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=ignite
       - POSTGRES_DB=rentx
+      - DATABASE_URL=postgres://docker:ignite@database:5432/rentx
     volumes:
       - pgdata:/data/postgres
   app: 
