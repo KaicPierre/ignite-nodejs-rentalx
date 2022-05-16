@@ -18,6 +18,9 @@ class User {
   @Column()
   driver_license: string;
 
+  @Column({ nullable: true })
+  avatar: string;
+
   @Column({ default: false })
   is_admin: boolean;
 
