@@ -8,8 +8,8 @@ const AppDataSource = new DataSource({
   password: 'ignite',
   database: 'rentx',
   entities: ['src/modules/**/entities/*.ts'],
-  migrations: ['src/database/migrations/*.ts'],
-  synchronize: true,
+  migrations: ['src/shared/infra/typeorm/migrations/*.ts'],
+  synchronize: false,
   logging: false,
 });
 
