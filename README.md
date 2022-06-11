@@ -11,13 +11,16 @@
 **RN**  
 [X] Não deve ser possível cadastrar mais de um carro com a mesma placa;  
 [X] O carro deve ser cadastrado, por padrão, com disponibilidade ;  
-* [] Um carro só pode ser cadastrado por um usuário administrador.  
+[X] Um carro só pode ser cadastrado por um usuário administrador.  
 
 
 # Listagem de carros
 
 **RF**  
 [] Deve ser possível listar todos os carro disponíveis.
+[] Deve ser possível listar todos os carro disponíveis pelo nome da categoria.
+[] Deve ser possível listar todos os carro disponíveis pelo nome da marca.
+[] Deve ser possível listar todos os carro disponíveis pelo nome do carro.
 
 **RN**  
 [] O usuário não precisa estar logado no sistema.
